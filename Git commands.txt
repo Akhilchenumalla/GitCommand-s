@@ -1,0 +1,294 @@
+Git commands
+
+git --version   (the command to check which version of Git (if any) is installed.)
+
+git init (Initialize Git on the current folder:)
+
+Set the user name for the current repository to "w3schools-test":
+git config user.name "w3schools-test"
+
+ls- list
+
+cd - IF WE NEED TO GO TO FOLDER
+
+cd.. - it will goes back the file
+
+mkdir  - make directory or folder
+
+touch - creating files
+
+start - opening file
+
+code - editing file
+
+rm file name- removes file
+
+rm -r file name - removes directory
+
+ -a - it shows hidden files
+
+.git - . represents hidden in git 
+
+git status - it gives the status of the git
+
+git add file name - it will add to reprosity
+
+git commit -m "any comments" - we can add comments on the git status and we commit
+
+vi file name - it adds the txt directly in terminal
+
+cat filename - it shows the data of file in terminal
+
+git restore --staged filename -- it will make outside the git status angain it comes to red colour
+
+git log - viewing the overall history of the project
+
+git reset commit - it will change the status of git
+
+git push origin master - pushing the code to the master branch.
+
+git branch
+git branch -m main
+git push origin main
+git push --set-upstream origin main
+--- we can change branch
+
+To change the directory to a different drive, such as the D: drive in Windows, using Git Bash, follow these steps:
+Navigate to the root directory:
+cd /d 
+
+git remote add origin 
+git remote add upstream
+
+ git rebase -I commit url - it will remove the all commits at once 
+
+Basic Commands:
+• git init: Initializes a new Git repository.
+• git clone: Copies an existing repository.
+• git add: Stages changes for commit.
+• git commit: Records changes to the repository.
+• git status: Shows the status of changes.
+• git push: Sends committed changes to a remote repository.
+• git pull: Fetches and merges changes from a remote repository
+
+
+
+Here are some commonly asked Git and GitHub interview questions along with their answers, tailored for an IT job role:
+
+Basic Questions
+What is Git?
+Answer: Git is a distributed version control system that allows multiple people to work on a project simultaneously without overriding each other's changes. It helps in tracking changes, reverting to previous states, and collaborating on code.
+
+What is GitHub?
+Answer: GitHub is a web-based platform that uses Git for version control. It allows developers to host their repositories, collaborate with others, and manage projects with features like pull requests, issues, and continuous integration.
+
+What is a repository in Git?
+Answer: A repository (or repo) is a storage space where your project's files and their revision history are stored. It can be local (on your computer) or remote (on a platform like GitHub).
+
+What is a commit in Git?
+Answer: A commit is a snapshot of your repository at a specific point in time. It includes all the changes made to the files and a message describing the changes.
+Intermediate Questions
+
+What is branching in Git?
+Answer: Branching allows you to create a separate line of development. Each branch can have its own set of commits and can be merged back into the main branch (usually master or main) when the work is complete.
+
+How do you create a new branch in Git?
+Answer: You can create a new branch using the command git branch <branch-name> and switch to it using git checkout <branch-name> or git switch <branch-name>. Alternatively, you can create and switch to a new branch in one step using git checkout -b <branch-name>.
+
+What is a pull request?
+Answer: A pull request is a feature in GitHub that allows you to notify team members that you have completed a feature or fix and request that they review and merge your changes into the main branch.
+
+What is the difference between git fetch and git pull?
+Answer: git fetch downloads commits, files, and refs from a remote repository into your local repo but does not integrate them with your working files. git pull does the same as git fetch but also immediately merges the changes into your current branch.
+
+Advanced Questions
+
+How do you resolve a merge conflict in Git?
+Answer: When a merge conflict occurs, Git will mark the conflicted areas in the files. You need to manually edit the files to resolve the conflicts, then mark them as resolved using git add <file>. Finally, commit the changes with git commit.
+
+What is a Git stash?
+Answer: Git stash temporarily shelves (or stashes) changes you've made to your working directory so you can work on something else and then come back and reapply them later. Use git stash to stash changes and git stash apply to reapply them.
+
+How do you revert a commit in Git?
+Answer: You can revert a commit using the git revert <commit-hash> command, which creates a new commit that undoes the changes made by the specified commit.
+
+What is the purpose of git rebase?
+Answer: git rebase is used to integrate changes from one branch into another. It moves or combines a sequence of commits to a new base commit, creating a linear and cleaner project history.
+
+Scenario-Based Questions
+
+How would you handle a situation where you accidentally committed sensitive information (like passwords) to a public repository?
+Answer: First, remove the sensitive information from your code. Then, use git filter-branch or the BFG Repo-Cleaner to remove the sensitive data from the commit history. Finally, force-push the changes to the remote repository with git push origin --force. Inform any collaborators to re-clone the repository to avoid using the sensitive data.
+
+What steps would you take if you need to work on a bug fix in a large project with many collaborators?
+Answer:
+Pull the latest changes from the main branch (git pull origin main).
+Create a new branch for the bug fix (git checkout -b bugfix/issue-123).
+Make and commit the necessary changes.
+Push the bug fix branch to the remote repository (git push origin bugfix/issue-123).
+Create a pull request for the branch and request reviews from team members.
+Address any feedback and make additional commits if needed.
+Once approved, merge the pull request into the main branch.
+
+Explain how you can use Git hooks in a project.
+Answer: Git hooks are scripts that run automatically at certain points in the Git workflow. For example, you can use pre-commit hooks to run tests or linters before allowing a commit, or post-receive hooks to deploy code after it has been pushed to a repository. Hooks are placed in the .git/hooks directory of a repository.
+By preparing answers to these questions, you'll be well-equipped to demonstrate your knowledge of Git and GitHub during your IT job interview.
+
+
+
+Certainly! Here are 50 Git and GitHub questions divided into basic and intermediate categories:
+
+Basic Questions
+What is Git?
+
+Answer: Git is a distributed version control system that tracks changes in source code during software development.
+What is GitHub?
+
+Answer: GitHub is a web-based platform for version control and collaboration that uses Git.
+What is a repository in Git?
+
+Answer: A repository (repo) is a storage location for your project files and their revision history.
+How do you create a new Git repository?
+
+Answer: You can create a new Git repository using the command git init.
+How do you clone a repository from GitHub?
+
+Answer: Use the command git clone <repository-url>.
+What is a commit in Git?
+
+Answer: A commit is a snapshot of your changes in the repository, with a message describing what was done.
+How do you stage changes for a commit?
+
+Answer: Use the command git add <file> to stage changes.
+How do you commit changes in Git?
+
+Answer: Use the command git commit -m "commit message".
+What is a branch in Git?
+
+Answer: A branch is a separate line of development in a repository.
+How do you create a new branch?
+
+Answer: Use the command git branch <branch-name>.
+How do you switch to a different branch?
+
+Answer: Use the command git checkout <branch-name> or git switch <branch-name>.
+What is the difference between git fetch and git pull?
+
+Answer: git fetch downloads commits, files, and refs from a remote repository but does not integrate them into your working directory. git pull does both fetching and merging.
+How do you check the status of your repository?
+
+Answer: Use the command git status.
+How do you see the commit history?
+
+Answer: Use the command git log.
+What is a remote repository?
+
+Answer: A remote repository is a version of your project that is hosted on the internet or network.
+How do you add a remote repository?
+
+Answer: Use the command git remote add <name> <url>.
+How do you push changes to a remote repository?
+
+Answer: Use the command git push <remote> <branch>.
+How do you pull changes from a remote repository?
+
+Answer: Use the command git pull <remote> <branch>.
+What is a merge in Git?
+
+Answer: A merge is an operation that combines changes from different branches.
+How do you merge a branch into the current branch?
+
+Answer: Use the command git merge <branch-name>.
+What is a conflict in Git?
+
+Answer: A conflict occurs when changes from different branches contradict each other and Git cannot merge them automatically.
+How do you resolve a merge conflict?
+
+Answer: Manually edit the conflicted files to fix the conflicts, then stage the resolved files with git add and commit the changes.
+What is a fork in GitHub?
+
+Answer: A fork is a personal copy of another user's repository that lives on your GitHub account.
+How do you fork a repository on GitHub?
+
+Answer: Click the "Fork" button on the repository page on GitHub.
+What is a pull request?
+
+Answer: A pull request is a way to submit contributions to a project. It lets others know about the changes you've pushed to a branch in your fork of a repository.
+Intermediate Questions
+How do you revert a commit in Git?
+
+Answer: Use the command git revert <commit-hash>.
+What is git rebase and how is it different from git merge?
+
+Answer: git rebase moves or combines a sequence of commits to a new base commit. Unlike git merge, it creates a linear history by applying changes from one branch onto another without creating a merge commit.
+What is git cherry-pick?
+
+Answer: git cherry-pick applies the changes introduced by an existing commit onto the current branch.
+How do you delete a branch in Git?
+
+Answer: Use the command git branch -d <branch-name> to delete a local branch and git push origin --delete <branch-name> to delete a remote branch.
+What is a Git tag?
+
+Answer: A tag is a reference that points to a specific commit, typically used to mark release points.
+How do you create a tag in Git?
+
+Answer: Use the command git tag <tag-name>.
+How do you push tags to a remote repository?
+
+Answer: Use the command git push origin <tag-name> or git push --tags to push all tags.
+What is a .gitignore file?
+
+Answer: A .gitignore file specifies files and directories that Git should ignore.
+How do you undo the last commit?
+
+Answer: Use the command git revert HEAD to create a new commit that undoes the last commit. Alternatively, use git reset --hard HEAD~1 to remove the last commit (use with caution).
+What is git stash?
+
+Answer: git stash temporarily shelves changes you've made to your working directory so you can work on something else and reapply them later.
+How do you apply stashed changes?
+
+Answer: Use the command git stash apply.
+How do you list stashes in Git?
+
+Answer: Use the command git stash list.
+How do you create a new branch and switch to it in one command?
+
+Answer: Use the command git checkout -b <branch-name>.
+What is git diff used for?
+
+Answer: git diff shows the changes between commits, branches, or your working directory and the index.
+How do you remove a file from Git but keep it locally?
+
+Answer: Use the command git rm --cached <file>.
+What is a submodule in Git?
+
+Answer: A submodule allows you to keep a Git repository as a subdirectory of another Git repository.
+How do you add a submodule in Git?
+
+Answer: Use the command git submodule add <repository-url>.
+What is git blame used for?
+
+Answer: git blame shows what revision and author last modified each line of a file.
+How do you rename a branch in Git?
+
+Answer: Use the command git branch -m <old-name> <new-name>.
+What is git clean used for?
+
+Answer: git clean removes untracked files from your working directory.
+How do you create a new GitHub repository from the command line?
+
+Answer: Use the GitHub CLI or a curl command to create a new repository, or create it via the GitHub website and then clone it.
+What is a bare repository in Git?
+
+Answer: A bare repository is a repository that does not have a working directory. It is used as a central repository that others clone and push to.
+How do you list all remote repositories?
+
+Answer: Use the command git remote -v.
+What is git bisect?
+
+Answer: git bisect uses binary search to find the commit that introduced a bug by checking out a series of commits.
+How do you configure a Git username and email?
+
+Answer: Use the commands git config --global user.name "Your Name" and git config --global user.email "your.email@example.com".
+These questions should help you prepare thoroughly for an interview focused on Git and GitHub skills.
+
